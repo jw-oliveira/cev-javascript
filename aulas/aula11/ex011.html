@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 16pt Arial;
+            width: 100px;
+            
+        }
+        div#resultado {
+            margin-top: 20px;
+            height: 100px;
+            width: 700px;
+            text-align: center;
+            line-height: 100px;
+            background-color: aquamarine;
+        }
+        h1#Nome {
+            text-align: left;
+        }
+        #inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            background-color: aqua;
+            height: 300px;
+            width: 700px;
+        }        
+    </style>
+</head>
+<body>
+    <h1 id="Nome">Verificação de Nacionalidade</h1>
+    <div id="inputs">
+    Digite seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" id="verificar" onclick="verifica_pais()">
+    <div id="resultado">
+    </div>
+    </div>
+    <script>
+        function verifica_pais() {
+            var pais = window.document.getElementById('pais').value
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `Seu pais é ${pais}`
+            if (pais != 'Brasil') {
+                res.innerHTML += '<p>Você é estrangeiro.</p>'
+            }
+            else {
+                res.innerHTML += '<p>Você é brasileiro.</p>'
+            }                      
+        }
+    </script>
+</body>
+</html>
