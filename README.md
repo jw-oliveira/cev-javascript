@@ -18,6 +18,7 @@
   <a href="https://www.youtube.com/watch?v=H80nCKs9c2k&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=12&pp=iAQB"> 
     <img src="https://github.com/jw-oliveira/cev-javascript/assets/91788583/130346fc-8a65-4c44-9ce2-9d6799b50839" alt="Descrição da imagem" width="150">
   </a>
+  <br>
   <a href="https://www.youtube.com/watch?v=uPFasdmZHJc&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=15&pp=iAQB">
     <img src="https://github.com/jw-oliveira/cev-javascript/assets/91788583/41427316-cb9f-4138-9df9-e4852840bbcc" alt="Descrição da imagem" width="150">
   </a>
