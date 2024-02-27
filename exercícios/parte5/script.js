@@ -1,21 +1,37 @@
-function Tabuada() {
-    let num = document.getElementById('numero')
-    let tab = document.getElementById('seltab')
-    if (num.value.lenght == 0) {
-        window.alert('Por favor digite um número!')
+function contar() {
+    var inicio = document.getElementById('inicio')
+    var fim = document.getElementById('fim')
+    var passo = document.getElementById('passo')
+    var res = document.getElementById('result')
+    res.innerHTML = ''
+
+    if (inicio.value.lenght == 0 || fim.value.lenght == 0 || passo.value.lenght == 0) {
+        window.alert('Erro! Faltam dados!') 
     } else {
-        let n = Number(num.value)
-        let c = 1
-        tab.innerHTML = ''
-        while (c <= 10) {
-            let item = document.createElement('option')
-            item.text = `${n} * ${c} = ${n*c}`
-            item.value = `tab${c}`
-            tab.appendChild(item)
-            c++
+        var i = Number(inicio.value)
+        var f = Number(fim.value)
+        var p = Number(passo.value)
+
+        if (p == 0) {
+            window.alert('Passo inválido, considerando passo 1')
+            p = 1
         }
 
+        if (i < f) {   
+            for (var c = i; c <= f; c += p) {
+                res.innerHTML += `${c}`
+                if (c != fim) {
+                    res.innerHTML += '&#x1F449'
+                }
+            }
+        } else {
+            for (var c = i; c >= f; c -= p) {
+                res.innerHTML += `${c}`
+                if (c != fim) {
+                    res.innerHTML += '&#x1F449'
+                }
+            }
+        }
     }
-
-    
+    res.innerHTML += '&#x1F3C1'   
 }
