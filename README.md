@@ -5,7 +5,7 @@
 </p>
 
 <h3 align="center">
-  Exercícios realizados durante o curso de JavaScript do Curso em Vídeo.<br>
+  Atividades realizadas durante o curso de JavaScript do Curso em Vídeo.<br>
   Professor Gustavo Guanabara.
 </h3>
 <h3 align="center">
